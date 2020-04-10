@@ -29,5 +29,9 @@ class SearchController < ApplicationController
 		@data[:distance] = distance
 		@data[:duration] = duration
 		@data[:directions] = directions 
+
+#		render locals: {
+#			data: DataFacade.new(location)
+#		}
 	end
 end
