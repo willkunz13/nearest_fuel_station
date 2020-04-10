@@ -29,6 +29,5 @@ class SearchController < ApplicationController
 		@data[:distance] = distance
 		@data[:duration] = duration
 		@data[:directions] = directions 
-		binding.pry
 	end
 end

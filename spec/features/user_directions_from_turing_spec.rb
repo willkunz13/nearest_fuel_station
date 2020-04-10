@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "user" do
+describe "user", :vcr do
   scenario "directions from turing" do
     visit '/'
 		click_on "Find Nearest Station"
@@ -11,6 +11,6 @@ describe "user" do
 		expect(page).to have_content("Access Times")
 		expect(page).to have_content("Distance: 0.1 miles")
 		expect(page).to have_content("Travel Time: 1 min")
-		expect(page).to have_content("Directions: Turn left onto Lawrence St Destination will be on the left")
+		expect(page).to have_content("Turn left onto Lawrence St\nDestination will be on the left")
   end
 end

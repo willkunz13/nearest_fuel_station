@@ -1,8 +1,8 @@
 <h1> Search Results </h1>
-<p> Name: <% @data[:name] %> </p>
-<p> Address: <% @data[:address] %> </p>
-<p> Fuel Type: <% @data[:fuel] %> </p>
-<p> Access Times: <% @data[:times] %> </p>
-<p> Distance: <% @data[:distance] %> </p>
-<p> Travel Time: <% @data[:duration] %> </p>
-<p> Directions: <% @data[:directions] %> </p>
+<p> Name: <%= @data[:name] %> </p>
+<p> Address: <%= @data[:address] %> </p>
+<p> Fuel Type: <%= @data[:fuel] %> </p>
+<p> Access Times: <%= @data[:times] %> </p>
+<p> Distance: <%= @data[:distance] %>les </p>
+<p> Travel Time: <%= @data[:duration] %> </p>
+<p> Directions: <%= @data[:directions].html_safe %> </p>

@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=vMYqSkdsAOXaDXerET4RTt8uMz69uVft43SWFJ6Y&limit=1&location=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Fri, 10 Apr 2020 16:44:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '984'
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      Last-Modified:
+      - Fri, 10 Apr 2020 16:44:03 GMT
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 58878ee6-75fb-4c16-88fb-c5697e73d713
+      X-Runtime:
+      - '0.009894'
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      - max-age=31536000; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.750614,"longitude":-104.996775,"location_country":"US","precision":{"value":9,"name":"premise","types":["premise"]},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":112,"station_counts":{"total":337,"fuels":{"BD":{"total":0},"E85":{"total":1},"ELEC":{"total":330,"stations":{"total":105}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2020-04-10","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":147967,"open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Seventeenth
+        Street Plaza","station_phone":"800-663-5633","updated_at":"2020-04-10T09:16:06Z","facility_type":null,"geocode_status":"GPS","latitude":39.7501605,"longitude":-104.9951224,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th St.","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"ev_pricing":"$1.00-$6.00/Hr
+        Variable Parking Fee","ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["1114"],"posts":["2642","2643"]},"distance":0.0934,"distance_km":0.15031}]}'
+    http_version: null
+  recorded_at: Fri, 10 Apr 2020 16:44:03 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/directions/json?destination=39.7501605,-104.9951224&key=<GOOGLE_API_KEY>&origin=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 10 Apr 2020 16:44:03 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Denver, CO
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=60
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,h3-T050=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICAiZ2VvY29kZWRfd2F5cG9pbnRzIiA6IFsKICAgICAgewogICAgICAgICAiZ2VvY29kZXJfc3RhdHVzIiA6ICJPSyIsCiAgICAgICAgICJwYXJ0aWFsX21hdGNoIiA6IHRydWUsCiAgICAgICAgICJwbGFjZV9pZCIgOiAiQ2hJSkZTdDk5OFI0YkljUjBlM1FXTlhIOUQ4IiwKICAgICAgICAgInR5cGVzIiA6IFsgImVzdGFibGlzaG1lbnQiLCAicG9pbnRfb2ZfaW50ZXJlc3QiLCAic2Nob29sIiBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAgImdlb2NvZGVyX3N0YXR1cyIgOiAiT0siLAogICAgICAgICAicGxhY2VfaWQiIDogIkNoSUpENHJHR3R0NGJJY1JSSEN3QlNUMTB3ZyIsCiAgICAgICAgICJ0eXBlcyIgOiBbICJlc3RhYmxpc2htZW50IiwgImxhd3llciIsICJwb2ludF9vZl9pbnRlcmVzdCIgXQogICAgICB9CiAgIF0sCiAgICJyb3V0ZXMiIDogWwogICAgICB7CiAgICAgICAgICJib3VuZHMiIDogewogICAgICAgICAgICAibm9ydGhlYXN0IiA6IHsKICAgICAgICAgICAgICAgImxhdCIgOiAzOS43NTA2MjU4LAogICAgICAgICAgICAgICAibG5nIiA6IC0xMDQuOTk0NzY1NgogICAgICAgICAgICB9LAogICAgICAgICAgICAic291dGh3ZXN0IiA6IHsKICAgICAgICAgICAgICAgImxhdCIgOiAzOS43NDk0NTYzLAogICAgICAgICAgICAgICAibG5nIiA6IC0xMDQuOTk2ODIzNAogICAgICAgICAgICB9CiAgICAgICAgIH0sCiAgICAgICAgICJjb3B5cmlnaHRzIiA6ICJNYXAgZGF0YSDCqTIwMjAgR29vZ2xlIiwKICAgICAgICAgImxlZ3MiIDogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICJkaXN0YW5jZSIgOiB7CiAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIwLjIgbWkiLAogICAgICAgICAgICAgICAgICAidmFsdWUiIDogMjUxCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA3NgogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAiZW5kX2FkZHJlc3MiIDogIjEyMjUgMTd0aCBTdCwgRGVudmVyLCBDTyA4MDIwMiwgVVNBIiwKICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICJsYXQiIDogMzkuNzQ5ODkzLAogICAgICAgICAgICAgICAgICAibG5nIiA6IC0xMDQuOTk0NzY1NgogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAic3RhcnRfYWRkcmVzcyIgOiAiMTMzMSAxN3RoIFN0IExMMTAwLCBEZW52ZXIsIENPIDgwMjAyLCBVU0EiLAogICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAibGF0IiA6IDM5Ljc1MDYyNTgsCiAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45OTY4MjM0CiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJzdGVwcyIgOiBbCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjAuMSBtaSIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAxODMKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDUwCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDM5Ljc0OTQ1NjMsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45OTUzMTk1CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiSGVhZCBcdTAwM2NiXHUwMDNlc291dGhlYXN0XHUwMDNjL2JcdTAwM2Ugb24gXHUwMDNjYlx1MDAzZTE3dGggU3RcdTAwM2MvYlx1MDAzZSB0b3dhcmQgXHUwMDNjYlx1MDAzZUxhcmltZXIgU3RcdTAwM2MvYlx1MDAzZSIsCiAgICAgICAgICAgICAgICAgICAgICJwb2x5bGluZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJwb2ludHMiIDogIm14cnFGYmV6X1NAP1ZhQGhBeUFkQ29EIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDM5Ljc1MDYyNTgsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45OTY4MjM0CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJVklORyIKICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMjIzIGZ0IiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDY4CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAyNgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiZW5kX2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAzOS43NDk4OTMsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45OTQ3NjU2CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiVHVybiBcdTAwM2NiXHUwMDNlbGVmdFx1MDAzYy9iXHUwMDNlIG9udG8gXHUwMDNjYlx1MDAzZUxhd3JlbmNlIFN0XHUwMDNjL2JcdTAwM2VcdTAwM2NkaXYgc3R5bGU9XCJmb250LXNpemU6MC45ZW1cIlx1MDAzZURlc3RpbmF0aW9uIHdpbGwgYmUgb24gdGhlIGxlZnRcdTAwM2MvZGl2XHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJ0dXJuLWxlZnQiLAogICAgICAgICAgICAgICAgICAgICAicG9seWxpbmUiIDogewogICAgICAgICAgICAgICAgICAgICAgICAicG9pbnRzIiA6ICJjcXJxRnZ7eV9TX0FzQVVZIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDM5Ljc0OTQ1NjMsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45OTUzMTk1CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJVklORyIKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICAidHJhZmZpY19zcGVlZF9lbnRyeSIgOiBbXSwKICAgICAgICAgICAgICAgInZpYV93YXlwb2ludCIgOiBbXQogICAgICAgICAgICB9CiAgICAgICAgIF0sCiAgICAgICAgICJvdmVydmlld19wb2x5bGluZSIgOiB7CiAgICAgICAgICAgICJwb2ludHMiIDogIm14cnFGYmV6X1NoRmtIdUFtQiIKICAgICAgICAgfSwKICAgICAgICAgInN1bW1hcnkiIDogIjE3dGggU3QgYW5kIExhd3JlbmNlIFN0IiwKICAgICAgICAgIndhcm5pbmdzIiA6IFtdLAogICAgICAgICAid2F5cG9pbnRfb3JkZXIiIDogW10KICAgICAgfQogICBdLAogICAic3RhdHVzIiA6ICJPSyIKfQo=
+    http_version: null
+  recorded_at: Fri, 10 Apr 2020 16:44:03 GMT
+recorded_with: VCR 5.1.0
